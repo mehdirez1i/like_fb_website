@@ -3,28 +3,28 @@
   padding: 0;
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
-  color:var(--text-color) ;
+  color: var(--text-color);
 }
 
 :root {
   --body-color: #efefef;
   --nav-color: #1676f2;
   --bg-color: #fff;
-  --shadow-color:rgba(0, 0, 0, 0.1);
-  --text-color:#0a0a0a;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-color: #0a0a0a;
 }
 .dark-theme {
   --body-color: #0a0a0a;
   --nav-color: #3a3a3a;
   --bg-color: #484444;
-  --shadow-color:rgba(255, 247, 247, 0.4);
-  --text-color:#efefef;
+  --shadow-color: rgba(255, 247, 247, 0.4);
+  --text-color: #efefef;
 }
 body {
   background: var(--body-color);
   transition: background 0.3s;
 }
-body a{
+body a {
   color: #fff;
 }
 nav {
@@ -63,7 +63,7 @@ nav {
   margin-left: 30px;
 }
 .search-box {
-  background: #efefef;
+  background: var(--bg-color);
   width: 350px;
   border-radius: 20px;
   display: flex;
@@ -348,7 +348,7 @@ nav {
   width: 100%;
   background: var(--bg-color);
   border-radius: 6px;
-  padding: 20px;
+  padding: 12px;
   color: #626262;
   margin: 20px 0;
 }
@@ -376,11 +376,13 @@ nav {
   margin-top: 5px;
 }
 .post-row {
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .activity-icons div img {
+  margin-top: 10px;
   width: 18px;
   margin-right: 10px;
 }
@@ -421,7 +423,7 @@ nav {
   position: absolute;
   width: 90%;
   max-width: 350px;
-  background:var(--bg-color);
+  background: var(--bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   overflow: hidden;
